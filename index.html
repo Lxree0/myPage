@@ -36,15 +36,22 @@
     <!-- PROGETTI -->
     <section id="projects">
         <h2>Progetti</h2>
-       <div class="project">
+   <div class="project">
             <h3>File Organizer (Python)</h3>
             <p>Script che ordina automaticamente i file nelle cartelle.</p>
-            <!-- Bottone Compra ora -->
-            <a href="https://paypal.me/Lxree8/2" 
-            target="_blank" class="project-btn">
-            Compra ora
-            </a>
+            <!-- Bottone Compra ora che apre due schede -->
+            <button class="project-btn" onclick="openTwoTabs()">Compra ora</button>
         </div>
+
+        <script>
+        function openTwoTabs() {
+            // Apri PayPal
+            window.open('https://paypal.me/Lxree8/2', '_blank');
+            // Apri pagina di ringraziamento
+            window.open('afterpay.html', '_blank');
+        }
+        </script>
+
 
         <div class="project">
             <h3>Bot Discord (Python)</h3>
