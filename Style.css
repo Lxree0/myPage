@@ -168,3 +168,79 @@ footer {
         padding: 15px;
     }
 }
+/* --- BOTTONI PROGETTI --- */
+.project-btn {
+    background: linear-gradient(135deg, #6ea8fe, #a288ff);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-btn i {
+    font-size: 1.1em;
+}
+
+.project-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(106, 142, 255, 0.6);
+    background: linear-gradient(135deg, #a288ff, #6ea8fe);
+}
+
+.project-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    transform: skewX(-20deg);
+    transition: left 0.4s;
+}
+
+.project-btn:hover::before {
+    left: 100%;
+}
+
+/* --- ICONE COMPETENZE --- */
+ul li i {
+    margin-right: 8px;
+}
+
+/* --- ANIMAZIONI --- */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- PAYPAL ICON --- */
+.paypal-btn:hover svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #6ea8fe);
+    transition: all 0.3s ease;
+}
