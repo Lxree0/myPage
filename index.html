@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Il tuo nome</title>
+    <title>Portfolio - Lorenzo</title>
     <link rel="stylesheet" href="Style.css">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <h1>LORENZO</h1>
-        <p>Studente informatico appassionato di programmazione e sviluppo software</p>
+        <h1 class="fade-in">LORENZO</h1>
+        <p class="fade-in">Studente informatico appassionato di programmazione e sviluppo software</p>
     </header>
 
     <!-- SEZIONE CHI SONO -->
-    <section id="about">
+    <section id="about" class="fade-up">
         <h2>Chi sono</h2>
         <p>
             Sono uno studente del quinto anno di informatica. 
@@ -23,61 +25,58 @@
     </section>
 
     <!-- COMPETENZE -->
-    <section id="skills">
+    <section id="skills" class="fade-up">
         <h2>Competenze</h2>
         <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML & CSS</li>
-            <li>GitHub</li>
+            <li><i class="fa-brands fa-java"></i> Java</li>
+            <li><i class="fa-brands fa-python"></i> Python</li>
+            <li><i class="fa-solid fa-code"></i> HTML & CSS</li>
+            <li><i class="fa-brands fa-github"></i> GitHub</li>
         </ul>
     </section>
 
     <!-- PROGETTI -->
-    <section id="projects">
+    <section id="projects" class="fade-up">
         <h2>Progetti</h2>
-   <div class="project">
-            <h3>File Organizer (Python)</h3>
+
+        <div class="project">
+            <h3><i class="fa-solid fa-folder-open"></i> File Organizer (Python)</h3>
             <p>Script che ordina automaticamente i file nelle cartelle.</p>
             <!-- Bottone Compra ora che apre due schede -->
-            <button class="project-btn" onclick="openTwoTabs()">Compra ora</button>
+            <button class="project-btn" onclick="openTwoTabs()">
+                <i class="fa-solid fa-cart-shopping"></i> Compra ora
+            </button>
         </div>
 
         <script>
         function openTwoTabs() {
-            // Apri PayPal
             window.open('https://paypal.me/Lxree8/2', '_blank');
-            // Apri pagina di ringraziamento
             window.open('afterpay.html', '_blank');
         }
         </script>
 
-
-        <div class="project">
-            <h3>Bot Discord (Python)</h3>
-            <p>Bot che gestisce quiz e ruoli in un server Discord.</p>
-            <a  target="_blank">Soon...</a>
-        </div>
+      
     </section>
 
     <!-- CONTATTI -->
-    <section id="contact">
+    <section id="contact" class="fade-up">
         <h2>Contatti</h2>
-        <p>Email: <a href="mailto:tuoemail@example.com">lorenzolega81@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/Lxree0" target="_blank">github.com/Lxree0</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/tuo-username/" target="_blank">linkedin.com/in/tuo-username</a></p>
+        <p><i class="fa-solid fa-envelope"></i> Email: 
+            <a href="mailto:lorenzolega13@gmail.com">lorenzolega13@gmail.com</a></p>
+        <p><i class="fa-brands fa-github"></i> GitHub: 
+            <a href="https://github.com/Lxree0" target="_blank">github.com/Lxree0</a></p>
     </section>
 
-    <section id="support">
-    <h2>Supportami</h2>
-    <p>Se ti piacciono i miei progetti, puoi sostenermi con una piccola donazione:</p>
-    <a href="https://paypal.me/Lxree8" target="_blank" class="paypal-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M20.242 6.074c-.274-1.147-1.182-2.05-2.326-2.326-1.635-.39-4.078-.39-7.444-.39H7.007c-.86 0-1.59.622-1.732 1.47L2.01 20.583c-.104.627.385 1.197 1.02 1.197h4.276l.537-3.406c-.142-.848.872-1.47 1.732-1.47h1.198c3.366 0 5.809 0 7.444-.39 1.144-.276 2.052-1.179 2.326-2.326.396-1.643.396-4.23.396-7.114s0-5.471-.396-7.114z"/>
-        </svg>
-        Dona con PayPal
-    </a>
- 
+    <!-- SUPPORTO -->
+    <section id="support" class="fade-up">
+        <h2>Supportami</h2>
+        <p>Se ti piacciono i miei progetti, puoi sostenermi con una piccola donazione:</p>
+        <a href="https://paypal.me/Lxree8" target="_blank" class="paypal-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 20%;">
+                <path d="M20.242 6.074c-.274-1.147-1.182-2.05-2.326-2.326-1.635-.39-4.078-.39-7.444-.39H7.007c-.86 0-1.59.622-1.732 1.47L2.01 20.583c-.104.627.385 1.197 1.02 1.197h4.276l.537-3.406c-.142-.848.872-1.47 1.732-1.47h1.198c3.366 0 5.809 0 7.444-.39 1.144-.276 2.052-1.179 2.326-2.326.396-1.643.396-4.23.396-7.114s0-5.471-.396-7.114z"/>
+            </svg>
+            Dona con PayPal
+        </a>
     </section>
 
     <footer>
